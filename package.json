@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "$(npm bin)/watchify -t babelify -o public/bundle.js src/main.js -v"
+    "watch": "$(npm bin)/watchify -t babelify -o public/bundle.js src/main.js -v",
+    "build": "$(npm bin)/browserify -t babelify -o public/bundle.js src/main.js"
   },
   "author": "",
   "license": "ISC",
